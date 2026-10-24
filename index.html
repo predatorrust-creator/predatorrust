@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | DevOps Студент</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #7dd3fc;
+            --border: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        section h2::before {
+            content: ">_";
+            color: var(--accent);
+            font-family: monospace;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed var(--border);
+            padding-bottom: 6px;
+        }
+
+        .info-list li span:first-child {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-family: monospace;
+            transition: all 0.2s ease;
+        }
+
+        .skill-badge:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .about-text {
+            color: var(--text-muted);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Шапка профиля -->
+        <header>
+            <h1>Рустам Асмандияров</h1>
+            <p>DevOps Engineer & Студент УГНТУ</p>
+        </header>
+
+        <!-- Общая информация -->
+        <section>
+            <h2>Основная информация</h2>
+            <ul class="info-list">
+                <li><span>Образование:</span> <span>УГНТУ, Магистратура</span></li>
+                <li><span>Направление:</span> <span>Технологии DevOps</span></li>
+                <li><span>Группа:</span> <span>МПИ10з-24</span></li>
+                <li><span>Локация:</span> <span>Уфа, Россия</span></li>
+            </ul>
+        </section>
+
+        <!-- Навыки / Стек технологий -->
+        <section>
+            <h2>Технологический стек</h2>
+            <div class="skills-grid">
+                <span class="skill-badge">Git & GitHub</span>
+                <span class="skill-badge">Linux / Bash</span>
+                <span class="skill-badge">Docker</span>
+                <span class="skill-badge">CI/CD Pipeline</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Automation</span>
+            </div>
+        </section>
+
+        <!-- О себе -->
+        <section>
+            <h2>Обо мне</h2>
+            <p class="about-text">
+                Изучаю автоматизацию развертывания программного обеспечения, управление конфигурациями и современные практики DevOps. 
+                В рамках курса «Технологии DevOps: автоматизация внедрений и обновлений» практикуюсь в работе с распределенными системами контроля версий, оптимизацией процессов разработки и контейнеризацией приложений.
+            </p>
+        </section>
+
+        <!-- Подвал -->
+        <footer>
+            <p>© 2026 | Создано в рамках лабораторных работ по DevOps</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
